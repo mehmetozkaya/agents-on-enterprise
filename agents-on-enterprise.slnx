@@ -1,0 +1,31 @@
+<Solution>
+  <Folder Name="/part-01-foundations/" />
+  <Folder Name="/part-01-foundations/01-why-agents/">
+    <File Path="part-01-foundations/01-why-agents/README.md" />
+  </Folder>
+  <Folder Name="/part-01-foundations/02-ai-agents/">
+    <File Path="part-01-foundations/02-ai-agents/README.md" />
+  </Folder>
+  <Folder Name="/part-01-foundations/03-components/">
+    <File Path="part-01-foundations/03-components/README.md" />
+  </Folder>
+  <Folder Name="/part-02-explore/" />
+  <Folder Name="/part-02-explore/04-frameworks/">
+    <File Path="part-02-explore/04-frameworks/README.md" />
+  </Folder>
+  <Folder Name="/part-02-explore/05-ecosystem/">
+    <File Path="part-02-explore/05-ecosystem/README.md" />
+  </Folder>
+  <Folder Name="/part-02-explore/06-setup/">
+    <File Path="part-02-explore/06-setup/README.md" />
+  </Folder>
+  <Folder Name="/part-03-core/" />
+  <Folder Name="/part-03-core/07-getting-started/">
+    <File Path="part-03-core/07-getting-started/README.md" />
+  </Folder>
+  <Folder Name="/part-04-multi-agent/" />
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+</Solution>
