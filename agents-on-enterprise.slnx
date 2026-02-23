@@ -22,6 +22,7 @@
   </Folder>
   <Folder Name="/part-02-explore/06-setup/">
     <File Path="part-02-explore/06-setup/README.md" />
+    <Project Path="part-02-explore/06-setup/HelloAgent/HelloAgent.csproj" Id="a833f67d-20bc-4ad7-8f8b-dcb184bfa2ec" />
   </Folder>
   <Folder Name="/part-03-core/">
     <File Path="part-03-core/README.md" />
