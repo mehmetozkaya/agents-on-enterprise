@@ -35,6 +35,9 @@
     <Project Path="part-03-core/07-getting-started/StructuredOutput/StructuredOutput.csproj" />
     <Project Path="part-03-core/07-getting-started/StructuredOutputStreaming/StructuredOutputStreaming.csproj" Id="9e80673d-f339-4a30-806f-21ce10f39a39" />
   </Folder>
+  <Folder Name="/part-03-core/08-tool-use/">
+    <Project Path="part-03-core/08-tool-use/FunctionCall/FunctionCall.csproj" Id="68dd55bc-8c77-49f0-80b4-8625cb787cc2" />
+  </Folder>
   <Folder Name="/part-04-multi-agent/">
     <File Path="part-04-multi-agent/README.md" />
   </Folder>
