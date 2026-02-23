@@ -29,6 +29,8 @@
   </Folder>
   <Folder Name="/part-03-core/07-getting-started/">
     <File Path="part-03-core/07-getting-started/README.md" />
+    <Project Path="BasicAgentApp/BasicAgentApp.csproj" Id="c89414e2-d40a-4d49-8b7d-b8c38d52122a" />
+    <Project Path="Streaming/Streaming.csproj" Id="aaf32551-325d-4f5d-a48d-66df253c0e82" />
   </Folder>
   <Folder Name="/part-04-multi-agent/">
     <File Path="part-04-multi-agent/README.md" />
