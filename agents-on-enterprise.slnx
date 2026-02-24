@@ -37,7 +37,10 @@
   </Folder>
   <Folder Name="/part-03-core/08-tool-use/">
     <Project Path="part-03-core/08-tool-use/ApproveRequiredFunc/ApproveRequiredFunc.csproj" Id="110c37ba-3443-4cf3-b334-8af7f6f74d5d" />
+    <Project Path="part-03-core/08-tool-use/CodeInterpreter/CodeInterpreter.csproj" Id="09042835-1dad-41d3-be36-94e1f0d1b832" />
+    <Project Path="part-03-core/08-tool-use/FileSearch/FileSearch.csproj" Id="746a289e-f805-4bc3-b9c3-59c82023bf19" />
     <Project Path="part-03-core/08-tool-use/FunctionCall/FunctionCall.csproj" Id="68dd55bc-8c77-49f0-80b4-8625cb787cc2" />
+    <Project Path="part-03-core/08-tool-use/WebSearch/WebSearch.csproj" Id="b34d0047-3fa6-4ace-a510-fbf4dcc97eab" />
   </Folder>
   <Folder Name="/part-04-multi-agent/">
     <File Path="part-04-multi-agent/README.md" />

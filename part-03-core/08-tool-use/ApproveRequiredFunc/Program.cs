@@ -29,7 +29,6 @@ class Program
 
         // 2. Wrap the Tool with Approval Requirements
         AIFunction rawRefundFunction = AIFunctionFactory.Create(FinanceTools.IssueRefund);
-
 #pragma warning disable MEAI001 // Acknowledge experimental AI framework features
         AIFunction secureRefundTool = new ApprovalRequiredAIFunction(rawRefundFunction);
 #pragma warning restore MEAI001
@@ -55,9 +54,9 @@ class Program
         AgentResponse response = await agent.RunAsync(userPrompt, session);
 
         // 5. Check if the Agent paused to request human approval
-        // var approvalRequests = response.Messages.OfType<FunctionApprovalRequestContent>().ToList();
 
-        var functionApprovalRequests = response.Messages
+#pragma warning disable MEAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+        var approvalRequests = response.Messages
             .SelectMany(x => x.Contents)
             .OfType<FunctionApprovalRequestContent>()
             .ToList();
