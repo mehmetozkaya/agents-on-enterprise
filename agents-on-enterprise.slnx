@@ -42,6 +42,12 @@
     <Project Path="part-03-core/08-tool-use/FunctionCall/FunctionCall.csproj" Id="68dd55bc-8c77-49f0-80b4-8625cb787cc2" />
     <Project Path="part-03-core/08-tool-use/WebSearch/WebSearch.csproj" Id="b34d0047-3fa6-4ace-a510-fbf4dcc97eab" />
   </Folder>
+  <Folder Name="/part-03-core/09-memory/">
+    <Project Path="part-03-core/09-memory/BasicSessionExample/BasicSessionExample.csproj" Id="7d61b49d-2fbb-4ce9-9c6d-eceedf68384b" />
+    <Project Path="part-03-core/09-memory/CustomContextProvider/CustomContextProvider.csproj" Id="6a568679-3524-443c-8d22-afe72ccf25ed" />
+    <Project Path="part-03-core/09-memory/MockCosmosDb/MockCosmosDb.csproj" Id="54317eed-0092-4ceb-af4f-e3327d204fb1" />
+    <Project Path="part-03-core/09-memory/TravelAgentWithMem0/TravelAgentWithMem0.csproj" Id="d4ba152f-1abb-405c-8f5c-f6469585031e" />
+  </Folder>
   <Folder Name="/part-04-multi-agent/">
     <File Path="part-04-multi-agent/README.md" />
   </Folder>

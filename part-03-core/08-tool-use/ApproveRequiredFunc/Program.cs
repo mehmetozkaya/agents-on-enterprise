@@ -31,7 +31,6 @@ class Program
         AIFunction rawRefundFunction = AIFunctionFactory.Create(FinanceTools.IssueRefund);
 #pragma warning disable MEAI001 // Acknowledge experimental AI framework features
         AIFunction secureRefundTool = new ApprovalRequiredAIFunction(rawRefundFunction);
-#pragma warning restore MEAI001
 
         // 3. Initialize the Agent with the secure tool
         AIAgent agent = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
