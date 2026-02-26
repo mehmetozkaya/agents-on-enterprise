@@ -51,6 +51,12 @@
   <Folder Name="/part-04-multi-agent/">
     <File Path="part-04-multi-agent/README.md" />
   </Folder>
+  <Folder Name="/part-04-multi-agent/10-workflows/">
+    <Project Path="part-04-multi-agent/10-workflows/AgenticWorkflowPatterns/AgenticWorkflowPatterns.csproj" Id="4dd56e23-2d8c-41a4-8ffb-10511e4a6919" />
+    <Project Path="part-04-multi-agent/10-workflows/AgentsWorkflow/AgentsWorkflow.csproj" Id="63f90b74-cbb6-4708-b207-a0c32c9c5b23" />
+    <Project Path="part-04-multi-agent/10-workflows/CheckpointHumanInTheLoop/CheckpointHumanInTheLoop.csproj" Id="35372d1e-8e3c-4bd4-a7e2-e1575974bfd5" />
+    <Project Path="part-04-multi-agent/10-workflows/FirstWorkflow/FirstWorkflow.csproj" Id="2d1c76b2-75b1-46af-a378-1b7a803094dd" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
