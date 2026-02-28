@@ -57,6 +57,17 @@
     <Project Path="part-04-multi-agent/10-workflows/CheckpointHumanInTheLoop/CheckpointHumanInTheLoop.csproj" Id="35372d1e-8e3c-4bd4-a7e2-e1575974bfd5" />
     <Project Path="part-04-multi-agent/10-workflows/FirstWorkflow/FirstWorkflow.csproj" Id="2d1c76b2-75b1-46af-a378-1b7a803094dd" />
   </Folder>
+  <Folder Name="/part-05-agentic-rag/">
+    <File Path="part-05-agentic-rag/README.md" />
+  </Folder>
+  <Folder Name="/part-05-agentic-rag/11-agentic-rag/">
+    <File Path="part-05-agentic-rag/11-agentic-rag/README.md" />
+  </Folder>
+  <Folder Name="/part-05-agentic-rag/12-develop-agentic-rag/">
+    <File Path="part-05-agentic-rag/12-develop-agentic-rag/README.md" />
+    <Project Path="part-05-agentic-rag/12-develop-agentic-rag/BasicTextRAGExample/BasicTextRAGExample.csproj" Id="59ad4862-7438-4f02-8a12-eb6fe62b512a" />
+    <Project Path="part-05-agentic-rag/12-develop-agentic-rag/QdrantVectorStore/QdrantVectorStore.csproj" Id="0ff40545-e454-4255-8482-b80e7a25d284" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
