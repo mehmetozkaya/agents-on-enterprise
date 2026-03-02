@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>    
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+	  
+	<PackageReference Include="Azure.AI.OpenAI" Version="2.8.0-beta.1" />
+	<PackageReference Include="Azure.Identity" Version="1.18.0" />
+	<PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.0.0-rc2" />
+	<PackageReference Include="Microsoft.Agents.AI.Hosting.A2A.AspNetCore" Version="1.0.0-preview.260225.1" />
+  </ItemGroup>
+
+</Project>

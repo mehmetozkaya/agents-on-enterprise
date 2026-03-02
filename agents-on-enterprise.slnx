@@ -68,6 +68,16 @@
     <Project Path="part-05-agentic-rag/12-develop-agentic-rag/BasicTextRAGExample/BasicTextRAGExample.csproj" Id="59ad4862-7438-4f02-8a12-eb6fe62b512a" />
     <Project Path="part-05-agentic-rag/12-develop-agentic-rag/QdrantVectorStore/QdrantVectorStore.csproj" Id="0ff40545-e454-4255-8482-b80e7a25d284" />
   </Folder>
+  <Folder Name="/part-06-communications/">
+    <File Path="part-06-communications/README.md" />
+  </Folder>
+  <Folder Name="/part-06-communications/13-communications/">
+    <File Path="part-06-communications/13-communications/README.md" />
+  </Folder>
+  <Folder Name="/part-06-communications/14-a2a/">
+    <File Path="part-06-communications/14-a2a/README.md" />
+    <Project Path="part-06-communications/14-a2a/EnterpriseComplianceService/EnterpriseComplianceService.csproj" Id="c38f85f8-dfc3-42fd-af5f-42e086a823a7" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
