@@ -80,6 +80,7 @@
   </Folder>
   <Folder Name="/part-06-communications/15-mcp/">
     <File Path="part-06-communications/15-mcp/README.md" />
+    <Project Path="part-06-communications/15-mcp/HostedMcpGovernanceExample/HostedMcpGovernanceExample.csproj" Id="50fd847b-7cd7-4827-bd70-b8239285470e" />
     <Project Path="part-06-communications/15-mcp/LocalGitHubMcpExample/LocalGitHubMcpExample.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
