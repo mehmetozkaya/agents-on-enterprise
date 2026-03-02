@@ -78,6 +78,10 @@
     <File Path="part-06-communications/14-a2a/README.md" />
     <Project Path="part-06-communications/14-a2a/EnterpriseComplianceService/EnterpriseComplianceService.csproj" Id="c38f85f8-dfc3-42fd-af5f-42e086a823a7" />
   </Folder>
+  <Folder Name="/part-06-communications/15-mcp/">
+    <File Path="part-06-communications/15-mcp/README.md" />
+    <Project Path="part-06-communications/15-mcp/LocalGitHubMcpExample/LocalGitHubMcpExample.csproj" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
