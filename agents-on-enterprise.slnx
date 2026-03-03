@@ -83,6 +83,10 @@
     <Project Path="part-06-communications/15-mcp/HostedMcpGovernanceExample/HostedMcpGovernanceExample.csproj" Id="50fd847b-7cd7-4827-bd70-b8239285470e" />
     <Project Path="part-06-communications/15-mcp/LocalGitHubMcpExample/LocalGitHubMcpExample.csproj" />
   </Folder>
+  <Folder Name="/part-06-communications/16-ag-ui/">
+    <Project Path="part-06-communications/16-ag-ui/Client/Client.csproj" Id="0fced717-6736-441c-967a-a614c3d8594e" />
+    <Project Path="part-06-communications/16-ag-ui/Server/Server.csproj" Id="638128da-63e5-42c0-9cfa-21a730620fc3" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
