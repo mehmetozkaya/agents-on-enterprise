@@ -84,8 +84,13 @@
     <Project Path="part-06-communications/15-mcp/LocalGitHubMcpExample/LocalGitHubMcpExample.csproj" />
   </Folder>
   <Folder Name="/part-06-communications/16-ag-ui/">
+    <File Path="part-06-communications/16-ag-ui/README.md" />
     <Project Path="part-06-communications/16-ag-ui/Client/Client.csproj" Id="0fced717-6736-441c-967a-a614c3d8594e" />
     <Project Path="part-06-communications/16-ag-ui/Server/Server.csproj" Id="638128da-63e5-42c0-9cfa-21a730620fc3" />
+  </Folder>
+  <Folder Name="/part-06-communications/17-devui/">
+    <File Path="README.md" />
+    <Project Path="part-06-communications/17-devui/EnterpriseKycService/EnterpriseKycService.csproj" Id="53fcdcc5-7052-446e-b8a3-73901d76443f" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
