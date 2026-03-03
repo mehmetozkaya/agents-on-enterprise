@@ -92,6 +92,16 @@
     <File Path="README.md" />
     <Project Path="part-06-communications/17-devui/EnterpriseKycService/EnterpriseKycService.csproj" Id="53fcdcc5-7052-446e-b8a3-73901d76443f" />
   </Folder>
+  <Folder Name="/part-07-advanced/">
+    <File Path="part-07-advanced/README.md" />
+  </Folder>
+  <Folder Name="/part-07-advanced/18-middleware/">
+    <File Path="part-07-advanced/18-middleware/README.md" />
+    <Project Path="part-07-advanced/18-middleware/FinanceAgentMiddleware/FinanceAgentMiddleware.csproj" Id="58e41d5a-cd2b-4893-a1d8-50a7460dcaa2" />
+  </Folder>
+  <Folder Name="/part-07-advanced/19-skills/">
+    <File Path="part-07-advanced/19-skills/README.md" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
