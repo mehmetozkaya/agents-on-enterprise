@@ -1,0 +1,11 @@
+@ApiService_HostAddress = http://localhost:5422
+
+GET {{ApiService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{ApiService_HostAddress}}/api/chat
+Content-Type: application/json
+
+"Do we have enough stock of item XT-900 to fulfill a 50 unit order?"

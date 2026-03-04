@@ -107,6 +107,31 @@
     <File Path="part-07-advanced/20-reasoning/README.md" />
     <Project Path="part-07-advanced/20-reasoning/AgentReasoning/AgentReasoning.csproj" Id="80e6b556-0858-432c-8934-ca3d2f44e5b4" />
   </Folder>
+  <Folder Name="/part-08-enterprise/">
+    <File Path="part-08-enterprise/README.md" />
+  </Folder>
+  <Folder Name="/part-08-enterprise/21-adlc/">
+    <File Path="part-08-enterprise/21-adlc/README.md" />
+  </Folder>
+  <Folder Name="/part-08-enterprise/22-observability/">
+    <File Path="part-08-enterprise/22-observability/README.md" />
+    <Project Path="part-08-enterprise/22-observability/SupplyChain.ApiService/SupplyChain.ApiService.csproj" />
+    <Project Path="part-08-enterprise/22-observability/SupplyChain.AppHost/SupplyChain.AppHost.csproj" Id="6f3acb17-7e78-4b19-add5-b79ef60587f3" />
+    <Project Path="part-08-enterprise/22-observability/SupplyChain.ServiceDefaults/SupplyChain.ServiceDefaults.csproj" />
+    <Project Path="part-08-enterprise/22-observability/SupplyChain.Web/SupplyChain.Web.csproj" />
+  </Folder>
+  <Folder Name="/part-08-enterprise/23-evaluation/">
+    <File Path="part-08-enterprise/23-evaluation/README.md" />
+  </Folder>
+  <Folder Name="/part-08-enterprise/24-security/">
+    <File Path="part-08-enterprise/24-security/README.md" />
+  </Folder>
+  <Folder Name="/part-08-enterprise/25-deployment/">
+    <File Path="part-08-enterprise/25-deployment/README.md" />
+  </Folder>
+  <Folder Name="/part-08-enterprise/26-cost/">
+    <File Path="part-08-enterprise/26-cost/README.md" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
