@@ -103,6 +103,10 @@
     <File Path="part-07-advanced/19-skills/README.md" />
     <Project Path="part-07-advanced/19-skills/EnterpriseSkillsArchitecture/EnterpriseSkillsArchitecture.csproj" Id="45e14a00-c4a5-4e8d-b3e0-46d5d52a3b9f" />
   </Folder>
+  <Folder Name="/part-07-advanced/20-reasoning/">
+    <File Path="part-07-advanced/20-reasoning/README.md" />
+    <Project Path="part-07-advanced/20-reasoning/AgentReasoning/AgentReasoning.csproj" Id="80e6b556-0858-432c-8934-ca3d2f44e5b4" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
     <File Path="README.md" />
