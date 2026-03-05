@@ -1,7 +1,4 @@
 <Solution>
-  <Folder Name="/assets/">
-    <File Path="assets/book-cover.png" />
-  </Folder>
   <Folder Name="/part-01-foundations/">
     <File Path="part-01-foundations/README.md" />
   </Folder>

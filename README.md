@@ -2,19 +2,17 @@
 
 # 🤖 Agents for Enterprise
 
-### Complete Enterprise Agentic AI Architectures with .NET
+**Complete Enterprise Agentic AI Architectures with .NET**
 
-**Build Production-Grade AI Systems Integrated with Enterprise Architectures**
+<a href="https://agentsonenterprise.com/">
+  <img src="./assets/book-cover.png" alt="Book Cover" width="180"/>
+</a>
 
-[![Book Cover](./assets/book-cover.png)](https://agentsonenterprise.com/)
+*Build Production-Grade AI Systems for Senior .NET Architects & Tech Leads*
 
-<br/>
+[![Get the Book](https://img.shields.io/badge/📘_Get_the_Book-agentsonenterprise.com-blue?style=for-the-badge)](https://agentsonenterprise.com/)
 
-[📘 **Get the Book**](https://agentsonenterprise.com/) • [🚀 Quick Start](#-quick-start) • [📚 Table of Contents](#-whats-inside) • [💬 Community](#-community)
-
----
-
-*The definitive guide for Senior .NET Architects & Tech Leads building enterprise-grade AI agent systems*
+[🚀 Quick Start](#-quick-start) • [📚 Table of Contents](#-whats-inside) • [🏗️ Architecture](#-architecture-patterns) • [💬 Community](#-community)
 
 </div>
 
@@ -24,17 +22,18 @@
 
 > **"You're a Senior Architect, but AI makes you feel like a Junior again."**
 
-You've tried to learn Agentic AI, but everything is in Python or focused on simple scripts that crumble in a real enterprise environment. You are shocked at how fast the industry is moving and feel like you're falling behind.
+You've tried to learn Agentic AI, but everything is in **Python** or focused on simple scripts that crumble in a real enterprise environment. **You don't need another "Hello World" tutorial.** You need to handle latency, security, and state management in a distributed C# system.
 
-**You don't need another "Hello World" tutorial.** You need to handle latency, security, and state management in a distributed C# system. Documentation for the .NET stack feels like a state secret—so you end up translating Python code that doesn't fit your clean architecture standards.
-
-### This Book is For You If:
+<details>
+<summary><strong>📋 This Book is For You If...</strong></summary>
 
 - ✅ You're a **Software Developer, Architect, or Tech Lead** working in enterprise environments
 - ✅ You need to **integrate AI agents into existing microservices** and backend systems
 - ✅ You want to build with **.NET and C#**—not switch to Python
 - ✅ You require **production-grade patterns** for security, observability, and scalability
 - ✅ You're adding **AI features to legacy systems** and need enterprise-ready solutions
+
+</details>
 
 ---
 
@@ -137,7 +136,7 @@ This comprehensive guide takes you from foundational concepts to production-read
 ### Prerequisites
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/)
+- [Visual Studio 2026](https://visualstudio.microsoft.com/) or [VS Code](https://code.visualstudio.com/)
 - [Azure Subscription](https://azure.microsoft.com/free/) (for cloud deployments)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (for local development)
 
