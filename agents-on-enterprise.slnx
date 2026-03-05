@@ -36,6 +36,7 @@
     <Project Path="part-03-core/07-getting-started/StructuredOutputStreaming/StructuredOutputStreaming.csproj" Id="9e80673d-f339-4a30-806f-21ce10f39a39" />
   </Folder>
   <Folder Name="/part-03-core/08-tool-use/">
+    <File Path="part-03-core/08-tool-use/README.md" />
     <Project Path="part-03-core/08-tool-use/ApproveRequiredFunc/ApproveRequiredFunc.csproj" Id="110c37ba-3443-4cf3-b334-8af7f6f74d5d" />
     <Project Path="part-03-core/08-tool-use/CodeInterpreter/CodeInterpreter.csproj" Id="09042835-1dad-41d3-be36-94e1f0d1b832" />
     <Project Path="part-03-core/08-tool-use/FileSearch/FileSearch.csproj" Id="746a289e-f805-4bc3-b9c3-59c82023bf19" />
@@ -43,6 +44,7 @@
     <Project Path="part-03-core/08-tool-use/WebSearch/WebSearch.csproj" Id="b34d0047-3fa6-4ace-a510-fbf4dcc97eab" />
   </Folder>
   <Folder Name="/part-03-core/09-memory/">
+    <File Path="part-03-core/09-memory/README.md" />
     <Project Path="part-03-core/09-memory/BasicSessionExample/BasicSessionExample.csproj" Id="7d61b49d-2fbb-4ce9-9c6d-eceedf68384b" />
     <Project Path="part-03-core/09-memory/CustomContextProvider/CustomContextProvider.csproj" Id="6a568679-3524-443c-8d22-afe72ccf25ed" />
     <Project Path="part-03-core/09-memory/MockCosmosDb/MockCosmosDb.csproj" Id="54317eed-0092-4ceb-af4f-e3327d204fb1" />
@@ -52,6 +54,7 @@
     <File Path="part-04-multi-agent/README.md" />
   </Folder>
   <Folder Name="/part-04-multi-agent/10-workflows/">
+    <File Path="part-04-multi-agent/10-workflows/README.md" />
     <Project Path="part-04-multi-agent/10-workflows/AgenticWorkflowPatterns/AgenticWorkflowPatterns.csproj" Id="4dd56e23-2d8c-41a4-8ffb-10511e4a6919" />
     <Project Path="part-04-multi-agent/10-workflows/AgentsWorkflow/AgentsWorkflow.csproj" Id="63f90b74-cbb6-4708-b207-a0c32c9c5b23" />
     <Project Path="part-04-multi-agent/10-workflows/CheckpointHumanInTheLoop/CheckpointHumanInTheLoop.csproj" Id="35372d1e-8e3c-4bd4-a7e2-e1575974bfd5" />
@@ -89,7 +92,7 @@
     <Project Path="part-06-communications/16-ag-ui/Server/Server.csproj" Id="638128da-63e5-42c0-9cfa-21a730620fc3" />
   </Folder>
   <Folder Name="/part-06-communications/17-devui/">
-    <File Path="README.md" />
+    <File Path="part-06-communications/17-devui/README.md" />
     <Project Path="part-06-communications/17-devui/EnterpriseKycService/EnterpriseKycService.csproj" Id="53fcdcc5-7052-446e-b8a3-73901d76443f" />
   </Folder>
   <Folder Name="/part-07-advanced/">

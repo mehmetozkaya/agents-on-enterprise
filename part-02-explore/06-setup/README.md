@@ -1,4 +1,47 @@
-06-setup
+# Chapter 06: Environment Setup
+
+<div align="center">
+
+*Setting up your .NET development environment for building AI agents*
+
+[![Get the Full Book](https://img.shields.io/badge/📘_Full_Chapter_in_Book-agentsonenterprise.com-blue?style=flat-square)](https://agentsonenterprise.com/)
+
+</div>
+
+---
+
+## 🎯 What You'll Learn
+
+This chapter gets you from zero to running your first AI agent with a properly configured enterprise development environment.
+
+### Topics Covered
+
+- **Prerequisites** — .NET SDK, Azure CLI, IDE setup
+- **Azure AI Foundry Configuration** — Setting up your cloud resources
+- **Authentication** — Secure keyless authentication with Azure CLI
+- **First Agent** — Building and running your "Hello Agent" application
+
+---
+
+## 📁 Code Examples
+
+| Example | Description | Key Concepts |
+|:---|:---|:---|
+| [HelloAgent](./HelloAgent/) | Your first AI agent | MAF basics, Azure OpenAI, authentication |
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Navigate to the example
+cd part-02-explore/06-setup/HelloAgent
+
+# Run the agent
+dotnet run
+```
+
+---
 
 # Setting Up Your Local Development Environment
 

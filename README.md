@@ -193,34 +193,6 @@ This repository demonstrates enterprise-grade architectural patterns including:
 
 ---
 
-## 🎓 The Agentic Architect Academy
-
-<div align="center">
-
-### **Beyond Static Tutorials—A Living Ecosystem**
-
-</div>
-
-**Agents for Enterprise** is more than a book. It's your gateway to **The Agentic Architect Academy**—a community where we dissect real-world production challenges.
-
-### What You Get:
-
-- 📘 **Complete Digital Book** — 8 parts, 26 chapters of enterprise-focused content
-- 🏗️ **Production-Ready Code** — Copy-pasteable architectural patterns for .NET AI
-- 🔧 **Hands-On Labs** — Step-by-step implementations you can run immediately
-- 🎯 **Enterprise Blueprints** — Battle-tested patterns from real-world deployments
-- 👥 **Peer Network** — Connect with senior architects solving the same complex problems
-
-<div align="center">
-
-### [🚀 Join the Academy Today](https://agentsonenterprise.com/)
-
-*Future-proof your career with enterprise AI architecture skills*
-
-</div>
-
----
-
 ## 💬 Community
 
 - 🌐 **Website**: [agentsonenterprise.com](https://agentsonenterprise.com/)
@@ -246,7 +218,4 @@ For the complete learning experience including detailed explanations, architectu
 **Stop translating Python scripts. Start building enterprise AI with .NET.**
 
 ---
-
-*Made with ❤️ for the .NET Enterprise Community*
-
 </div>
