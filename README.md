@@ -54,6 +54,20 @@ You've tried to learn Agentic AI, but everything is in **Python** or focused on 
 
 This comprehensive guide takes you from foundational concepts to production-ready enterprise deployments across **8 parts** and **26 chapters**:
 
+| Part | Title | Description |
+|:---:|:---|:---|
+| I | [Foundations](./part-01-foundations/README.md) | Understanding AI agents—why they matter, what they are, and their core components |
+| II | [Explore & Setup](./part-02-explore/README.md) | Navigate the AI landscape and configure your .NET development environment |
+| III | [Core Development](./part-03-core/README.md) | Build agents with tools, memory, streaming, and structured outputs |
+| IV | [Multi-Agent](./part-04-multi-agent/README.md) | Design workflows with multiple cooperating agents and orchestration |
+| V | [Agentic RAG](./part-05-agentic-rag/README.md) | Retrieval-augmented generation systems for enterprise knowledge |
+| VI | [Communications](./part-06-communications/README.md) | A2A, MCP, AG-UI protocols for agent interoperability |
+| VII | [Advanced](./part-07-advanced/README.md) | Middleware, skills architecture, and advanced reasoning patterns |
+| VIII | [Enterprise](./part-08-enterprise/README.md) | ADLC, observability, security, deployment, and cost management |
+
+<details>
+<summary><strong>📖 View All 26 Chapters</strong></summary>
+
 ### Part I: Foundations of AI Agents
 | Chapter | Topic | Description |
 |:---:|:---|:---|
@@ -111,6 +125,8 @@ This comprehensive guide takes you from foundational concepts to production-read
 | 24 | [Security](./part-08-enterprise/24-security/README.md) | Enterprise security architecture and compliance patterns |
 | 25 | [Deployment](./part-08-enterprise/25-deployment/README.md) | Azure Foundry deployment strategies and cloud-native patterns |
 | 26 | [Cost Management](./part-08-enterprise/26-cost/README.md) | Cost optimization strategies for enterprise AI systems |
+
+</details>
 
 ---
 
