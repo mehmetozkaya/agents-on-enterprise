@@ -121,6 +121,7 @@
   </Folder>
   <Folder Name="/part-08-enterprise/23-evaluation/">
     <File Path="part-08-enterprise/23-evaluation/README.md" />
+    <Project Path="part-08-enterprise/23-evaluation/AgentEvaluation/AgentEvaluation.csproj" Id="d3bcfce7-517f-4b27-8662-30689aaee6d2" />
   </Folder>
   <Folder Name="/part-08-enterprise/24-security/">
     <File Path="part-08-enterprise/24-security/README.md" />
