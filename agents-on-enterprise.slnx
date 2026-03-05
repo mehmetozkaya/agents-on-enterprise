@@ -125,6 +125,7 @@
   </Folder>
   <Folder Name="/part-08-enterprise/24-security/">
     <File Path="part-08-enterprise/24-security/README.md" />
+    <Project Path="part-08-enterprise/24-security/SecurityArchitecture/SecurityArchitecture.csproj" Id="70c4a7b1-dc1e-4c3e-ad3b-bb6eae6b0a85" />
   </Folder>
   <Folder Name="/part-08-enterprise/25-deployment/">
     <File Path="part-08-enterprise/25-deployment/README.md" />
