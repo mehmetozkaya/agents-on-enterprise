@@ -18,10 +18,13 @@ builder.Services.AddOpenApi();
 
 string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
 
-// Initialize the Chat Client
+// Initialize the Chat Client with OpenTelemetry instrumentation
 var chatClient = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
     .GetChatClient("gpt-5-mini")
-    .AsIChatClient();
+    .AsIChatClient()
+    .AsBuilder()
+    .UseOpenTelemetry(sourceName: "SupplyChain.ApiService", configure: cfg => cfg.EnableSensitiveData = true)
+    .Build();
 
 // Define an enterprise tool (This execution will be automatically traced!)
 var checkInventoryTool = AIFunctionFactory.Create(
@@ -35,7 +38,7 @@ var checkInventoryTool = AIFunctionFactory.Create(
     description: "Queries the warehouse database for real-time stock levels."
 );
 
-// Architect the Agent
+// Architect the Agent (traces are captured via the instrumented chat client)
 AIAgent inventoryAgent = chatClient.AsAIAgent(
     name: "SupplyChainAgent",
     instructions: "You are a supply chain assistant. Always check inventory before confirming an order.",

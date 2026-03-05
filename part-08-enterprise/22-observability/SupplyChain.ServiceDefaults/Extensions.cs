@@ -77,6 +77,7 @@ public static class Extensions
                 // This tells OTel to capture the cognitive loop, tool executions, and token metrics
                 tracing.AddSource("*Microsoft.Extensions.AI");
                 tracing.AddSource("*Microsoft.Agents.AI*");
+                tracing.AddSource("SupplyChain.ApiService"); // Custom source for our instrumented client and agent
             });
 
         // 3. Export to the Aspire Dashboard (via OTLP)

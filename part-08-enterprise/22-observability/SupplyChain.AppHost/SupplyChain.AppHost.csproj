@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SupplyChain.ApiService\SupplyChain.ApiService.csproj" />
-    <ProjectReference Include="..\SupplyChain.Web\SupplyChain.Web.csproj" />
   </ItemGroup>
 
 </Project>

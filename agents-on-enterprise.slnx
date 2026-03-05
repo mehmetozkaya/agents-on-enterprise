@@ -118,7 +118,6 @@
     <Project Path="part-08-enterprise/22-observability/SupplyChain.ApiService/SupplyChain.ApiService.csproj" />
     <Project Path="part-08-enterprise/22-observability/SupplyChain.AppHost/SupplyChain.AppHost.csproj" Id="6f3acb17-7e78-4b19-add5-b79ef60587f3" />
     <Project Path="part-08-enterprise/22-observability/SupplyChain.ServiceDefaults/SupplyChain.ServiceDefaults.csproj" />
-    <Project Path="part-08-enterprise/22-observability/SupplyChain.Web/SupplyChain.Web.csproj" />
   </Folder>
   <Folder Name="/part-08-enterprise/23-evaluation/">
     <File Path="part-08-enterprise/23-evaluation/README.md" />
