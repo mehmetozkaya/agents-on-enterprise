@@ -11,7 +11,8 @@ using SecurityArchitecture;
 
 Console.WriteLine("=== Enterprise Security Architecture Demo ===\n");
 
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 // =============================================================================
 // Build Secure Middleware Pipeline
@@ -19,7 +20,7 @@ string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
 
 // Layer 1: Base LLM Client (innermost)
 IChatClient pipeline = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
-    .GetChatClient("gpt-5-mini")
+    .GetChatClient(deploymentName)
     .AsIChatClient();
 
 // Layer 2: Enterprise Security Middleware (outermost - first line of defense)

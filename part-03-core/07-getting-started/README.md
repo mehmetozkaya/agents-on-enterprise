@@ -57,7 +57,7 @@ dotnet run
 AIAgent agent = new AzureOpenAIClient(
         new Uri(endpoint),        
         new AzureCliCredential())
-    .GetChatClient(model)
+    .GetChatClient(deploymentName)
     .AsAIAgent(instructions: "You are a helpful assistant.");
 
 var response = await agent.RunAsync("Hello!");

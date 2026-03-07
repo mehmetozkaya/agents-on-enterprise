@@ -6,12 +6,14 @@ using System.Text.Json;
 
 Console.WriteLine("--- Starting Enterprise Agent Evaluation Suite ---\n");
 
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
+
 var credential = new AzureCliCredential();
 
 // 1. Initialize the Target Agent (The agent being tested - e.g., gpt-4o-mini)
 IChatClient targetClient = new AzureOpenAIClient(new Uri(endpoint), credential)
-    .GetChatClient("gpt-5-mini").AsIChatClient();
+    .GetChatClient(deploymentName).AsIChatClient();
 
 AIAgent targetAgent = targetClient.AsAIAgent(
     name: "SupportAgent",
@@ -20,7 +22,7 @@ AIAgent targetAgent = targetClient.AsAIAgent(
 
 // 2. Initialize the Judge Agent (A superior reasoning model - e.g., gpt-4o or o1)-for now we have only gpt-5-mini
 IChatClient judgeClient = new AzureOpenAIClient(new Uri(endpoint), credential)
-    .GetChatClient("gpt-5-mini").AsIChatClient();
+    .GetChatClient(deploymentName).AsIChatClient();
 
 // We instruct the Judge to act as an objective evaluator and output strict JSON.
 AIAgent judgeAgent = judgeClient.AsAIAgent(

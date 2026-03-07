@@ -9,9 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 // Register the foundational Chat Client
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
+
 IChatClient chatClient = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
-    .GetChatClient("gpt-5-mini")
+    .GetChatClient(deploymentName)
     .AsIChatClient();
 
 builder.Services.AddSingleton(chatClient);

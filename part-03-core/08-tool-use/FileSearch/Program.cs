@@ -4,8 +4,9 @@ using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 using OpenAI.Chat;
 
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-string deploymentName = "gpt-5-mini";
+// Define the variables we extracted from Microsoft Foundry
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 // In a real scenario, this ID is retrieved from your Azure AI Foundry project
 string corporateVectorStoreId = "vs-987654321";

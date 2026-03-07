@@ -8,12 +8,14 @@ using Qdrant.Client;
 using QdrantVectorStore;
 using QdrantVectorStoreType = Microsoft.SemanticKernel.Connectors.Qdrant.QdrantVectorStore;
 
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
+
 var credential = new AzureCliCredential();
 
 // 1. Initialize the Chat Client (The Agent's Brain)
 var chatClient = new AzureOpenAIClient(new Uri(endpoint), credential)
-    .GetChatClient("gpt-5-mini")
+    .GetChatClient(deploymentName)
     .AsIChatClient();
 
 // 2. Initialize the Embedding Generator (The Translator)

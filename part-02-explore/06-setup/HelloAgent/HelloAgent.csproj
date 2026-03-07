@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.0.0-rc1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>

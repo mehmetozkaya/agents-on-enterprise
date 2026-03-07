@@ -12,8 +12,8 @@
 //{
 //    static async Task Main(string[] args)
 //    {
-//        string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-//        string deploymentName = "gpt-5-mini";
+//        var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+//        var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 //        // Initialize the universal chat client
 //        IChatClient chatClient = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
@@ -35,7 +35,7 @@
 //        AIAgent travelAgent = chatClient.AsAIAgent(new ChatClientAgentOptions()
 //        {
 //            Name = "TravelConcierge",
-//            ChatOptions = new() { Instructions = "You are an executive travel concierge. Always respect the user's stored preferences when booking." },            
+//            ChatOptions = new() { Instructions = "You are an executive travel concierge. Always respect the user's stored preferences when booking." },
 //            AIContextProviders = [mem0Provider]
 //        });
 

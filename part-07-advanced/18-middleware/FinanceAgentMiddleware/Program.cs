@@ -8,7 +8,8 @@ using Microsoft.Extensions.AI;
 // Agent Middleware Demo - Shows 4 key middleware patterns for AI agents
 // =============================================================================
 
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 Console.WriteLine("=== Agent Middleware Demo ===\n");
 
@@ -30,7 +31,7 @@ var revenueTool = AIFunctionFactory.Create(
 
 // Layer 1: Base LLM Client (innermost)
 IChatClient pipeline = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
-    .GetChatClient("gpt-5-mini")
+    .GetChatClient(deploymentName)
     .AsIChatClient();
 
 // Layer 2: Token Auditing - tracks token usage

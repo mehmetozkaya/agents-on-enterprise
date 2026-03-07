@@ -22,8 +22,8 @@ var mcpHostedTool = new HostedMcpServerTool(
 };
 
 // 2. Initialize the Agent
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-string deploymentName = "gpt-5-mini";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 AIAgent mentorAgent = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
     .GetChatClient(deploymentName)

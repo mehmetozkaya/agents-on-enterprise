@@ -4,15 +4,15 @@ using Microsoft.Agents.AI;
 using Microsoft.Extensions.AI;
 
 
-// 1. Establish the connection parameters
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-string model = "gpt-5-mini";
+// 1. Define the variables we extracted from Microsoft Foundry
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 // 2. Instantiate the universal chat client
 IChatClient chatClient = new AzureOpenAIClient(
         new Uri(endpoint),
         new AzureCliCredential())
-    .GetChatClient(model)
+    .GetChatClient(deploymentName)
     .AsIChatClient();
 
 // 3. Define the Agent's Anatomy

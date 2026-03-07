@@ -16,11 +16,12 @@ builder.Services.AddProblemDetails();
 builder.Services.AddOpenApi();
 
 
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 // Initialize the Chat Client with OpenTelemetry instrumentation
 var chatClient = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
-    .GetChatClient("gpt-5-mini")
+    .GetChatClient(deploymentName)
     .AsIChatClient()
     .AsBuilder()
     .UseOpenTelemetry(sourceName: "SupplyChain.ApiService", configure: cfg => cfg.EnableSensitiveData = true)

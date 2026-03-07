@@ -59,14 +59,14 @@ using Microsoft.Extensions.AI;
 using OpenAI.Chat;
 
 // 1. Define the variables we extracted from Microsoft Foundry
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-string model = "gpt-5-mini";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 // 2. Create the Agent using MAF
 AIAgent agent = new AzureOpenAIClient(
         new Uri(endpoint),        
         new AzureCliCredential())
-    .GetChatClient(model)
+    .GetChatClient(deploymentName)
     .AsAIAgent(instructions: "You are a friendly assistant. Keep your answers brief.");
 
 // 3. Invoke the Agent
@@ -100,15 +100,14 @@ using Microsoft.Extensions.AI;
 using OpenAI.Chat;
 
 // 1. Define the variables we extracted from Microsoft Foundry
-string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-string apiKey = "<your-api-key>";
-string model = "gpt-5-mini";
+var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
 // 2. Create the Agent using MAF
 AIAgent agent = new AzureOpenAIClient(
         new Uri(endpoint),
         new ApiKeyCredential(apiKey))        
-    .GetChatClient(model)
+    .GetChatClient(deploymentName)
     .AsAIAgent(instructions: "You are a friendly assistant. Keep your answers brief.");
 
 // 3. Invoke the Agent

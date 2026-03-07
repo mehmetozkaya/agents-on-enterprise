@@ -35,10 +35,12 @@ class StatelessAgentService
     public StatelessAgentService(ISessionRepository repository)
     {
         _repository = repository;
+        
+        var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+        var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
-        string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
         _agent = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
-            .GetChatClient("gpt-5-mini")
+            .GetChatClient(deploymentName)
             .AsAIAgent(
                 name: "PersistentGuide",
                 instructions: "You are a helpful assistant. You remember details across long periods of time."

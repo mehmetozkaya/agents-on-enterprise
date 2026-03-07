@@ -24,8 +24,9 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-        string deploymentName = "gpt-5-mini";
+        // 1. Define the variables we extracted from Microsoft Foundry
+        var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+        var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
         // 2. Wrap the Tool with Approval Requirements
         AIFunction rawRefundFunction = AIFunctionFactory.Create(FinanceTools.IssueRefund);

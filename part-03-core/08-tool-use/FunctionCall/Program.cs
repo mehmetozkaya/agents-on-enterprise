@@ -23,9 +23,9 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        // 2. Establish connection parameters
-        string endpoint = "https://agents-on-foundry-resource.services.ai.azure.com/";
-        string deploymentName = "gpt-5-mini";
+        // 2. Define the variables we extracted from Microsoft Foundry
+        var endpoint = Environment.GetEnvironmentVariable("AZURE_OPENAI_ENDPOINT") ?? throw new InvalidOperationException("AZURE_OPENAI_ENDPOINT is not set.");
+        var deploymentName = Environment.GetEnvironmentVariable("AZURE_OPENAI_DEPLOYMENT_NAME") ?? "gpt-5-mini";
 
         // 3. Initialize the Agent and Equip the Tool
         AIAgent agent = new AzureOpenAIClient(new Uri(endpoint), new AzureCliCredential())
