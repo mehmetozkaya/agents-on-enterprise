@@ -37,6 +37,10 @@ This chapter gets you from zero to running your first AI agent with a properly c
 # Navigate to the example
 cd part-02-explore/06-setup/HelloAgent
 
+# Set environment variables (PowerShell)
+$env:AZURE_OPENAI_ENDPOINT="https://your-resource.openai.azure.com/"  # Replace with your Azure OpenAI resource endpoint
+$env:AZURE_OPENAI_DEPLOYMENT_NAME="gpt-5-mini"  # Optional, defaults to gpt-5-mini
+
 # Run the agent
 dotnet run
 ```

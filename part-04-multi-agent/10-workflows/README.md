@@ -37,6 +37,10 @@ This chapter covers the patterns and practices for orchestrating multiple agents
 ## 🚀 Quick Start
 
 ```bash
+# Set environment variables (PowerShell)
+$env:AZURE_OPENAI_ENDPOINT="https://your-resource.openai.azure.com/"  # Replace with your Azure OpenAI resource endpoint
+$env:AZURE_OPENAI_DEPLOYMENT_NAME="gpt-5-mini"  # Optional, defaults to gpt-5-mini
+
 # Run the basic workflow example
 cd part-04-multi-agent/10-workflows/FirstWorkflow
 dotnet run

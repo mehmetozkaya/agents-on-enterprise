@@ -166,6 +166,10 @@ cd agents-on-enterprise
 # Navigate to your first agent
 cd part-02-explore/06-setup/HelloAgent
 
+# Set environment variables (PowerShell)
+$env:AZURE_OPENAI_ENDPOINT="https://your-resource.openai.azure.com/"  # Replace with your Azure OpenAI resource endpoint
+$env:AZURE_OPENAI_DEPLOYMENT_NAME="gpt-5-mini"  # Optional, defaults to gpt-5-mini
+
 # Run the agent
 dotnet run
 ```
@@ -178,32 +182,32 @@ This repository demonstrates enterprise-grade architectural patterns including:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Enterprise Agent Architecture                 │
+│                    Enterprise Agent Architecture                │
 ├─────────────────────────────────────────────────────────────────┤
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
 │  │   Agent 1   │  │   Agent 2   │  │   Agent N   │   Agents     │
 │  │  (Planner)  │  │ (Executor)  │  │  (Expert)   │              │
 │  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘              │
-│         │                │                │                      │
+│         │                │                │                     │
 │  ┌──────┴────────────────┴────────────────┴──────┐              │
 │  │              Orchestration Layer              │   Workflow   │
 │  │     (Multi-Agent Coordination & Routing)      │              │
-│  └──────────────────────┬───────────────────────┘              │
-│                         │                                        │
-│  ┌──────────────────────┴───────────────────────┐              │
-│  │              Middleware Pipeline              │   Security   │
-│  │  (Guardrails • PII • Rate Limiting • Auth)   │              │
-│  └──────────────────────┬───────────────────────┘              │
-│                         │                                        │
-│  ┌──────────────────────┴───────────────────────┐              │
-│  │            Enterprise Services                │   Backend    │
-│  │    (RAG • Memory • Tools • Integrations)     │              │
-│  └──────────────────────┬───────────────────────┘              │
-│                         │                                        │
-│  ┌──────────────────────┴───────────────────────┐              │
-│  │              Observability Layer              │   Ops       │
-│  │   (OpenTelemetry • Tracing • Metrics)        │              │
-│  └──────────────────────────────────────────────┘              │
+│  └──────────────────────┬───────────────────────-┘              │
+│                         │                                       │
+│  ┌──────────────────────┴───────────────────────┐               │
+│  │              Middleware Pipeline             │   Security    │
+│  │  (Guardrails • PII • Rate Limiting • Auth)   │               │
+│  └──────────────────────┬───────────────────────┘               │
+│                         │                                       │
+│  ┌──────────────────────┴───────────────────────┐               │
+│  │            Enterprise Services               │   Backend     │
+│  │    (RAG • Memory • Tools • Integrations)     │               │
+│  └──────────────────────┬───────────────────────┘               │
+│                         │                                       │
+│  ┌──────────────────────┴───────────────────────┐               │
+│  │              Observability Layer             │   Ops         │
+│  │   (OpenTelemetry • Tracing • Metrics)        │               │
+│  └──────────────────────────────────────────────┘               │
 └─────────────────────────────────────────────────────────────────┘
 ```
 

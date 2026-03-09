@@ -38,6 +38,10 @@ This chapter provides hands-on implementation of Agentic RAG systems using produ
 # Start Qdrant (Docker)
 docker run -p 6333:6333 qdrant/qdrant
 
+# Set environment variables (PowerShell)
+$env:AZURE_OPENAI_ENDPOINT="https://your-resource.openai.azure.com/"  # Replace with your Azure OpenAI resource endpoint
+$env:AZURE_OPENAI_DEPLOYMENT_NAME="gpt-5-mini"  # Optional, defaults to gpt-5-mini
+
 # Run the basic RAG example
 cd part-05-agentic-rag/12-develop-agentic-rag/BasicTextRAGExample
 dotnet run
