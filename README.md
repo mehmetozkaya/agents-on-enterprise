@@ -18,6 +18,12 @@
 
 ---
 
+**⚠️ LAUNCH WEEK SPECIAL:** 
+
+Get the comprehensive 400+ page companion e-book and reference bundle at **25% off** for the next 5 days! 
+
+[👉 **Grab the E-Book on Gumroad**](https://mehmetozkaya.gumroad.com/l/agents-on-enterprise/launch)
+
 ## 🎯 Why This Book?
 
 > **"You're a Senior Architect, but AI makes you feel like a Junior again."**
