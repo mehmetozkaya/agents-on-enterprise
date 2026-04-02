@@ -29,7 +29,7 @@ internal sealed class EmployeeProfileProvider : AIContextProvider
         _chatClient = chatClient;
     }
 
-    public override string StateKey => _sessionState.StateKey;
+    public override IReadOnlyList<string> StateKeys => [_sessionState.StateKey];
 
     public EmployeeProfile GetProfile(AgentSession session) => _sessionState.GetOrInitializeState(session);
 

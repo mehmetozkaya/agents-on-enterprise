@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Text.Json;
 using Azure.AI.OpenAI;
 using Azure.Identity;
 using Microsoft.Agents.AI;
@@ -58,17 +59,21 @@ class Program
 #pragma warning disable MEAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
         var approvalRequests = response.Messages
             .SelectMany(x => x.Contents)
-            .OfType<FunctionApprovalRequestContent>()
+            .OfType<ToolApprovalRequestContent>()
             .ToList();
 
         if (approvalRequests.Any())
         {
-            FunctionApprovalRequestContent request = approvalRequests.First();
+            ToolApprovalRequestContent request = approvalRequests.First();
+
+            var requestToolCall = (FunctionCallContent)request.ToolCall;
+            string toolName = requestToolCall.Name;
+            string toolArguments = JsonSerializer.Serialize(requestToolCall.Arguments);
 
             // Display the AI's intent to the human manager
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"\n[SECURITY ALERT] Agent requests permission to execute '{request.FunctionCall.Name}'");
-            Console.WriteLine($"Proposed Arguments: {request.FunctionCall.Arguments}");
+            Console.WriteLine($"\n[SECURITY ALERT] Agent requests permission to execute '{toolName}'");
+            Console.WriteLine($"Proposed Arguments: {toolArguments}");
             Console.Write("Do you approve this action? [Y/N]: ");
             Console.ResetColor();
 

@@ -28,7 +28,7 @@ This chapter maps out the complete AI agent ecosystem—from model providers to 
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                  AI Agent Ecosystem                  │
+│                  AI Agent Ecosystem                 │
 ├─────────────────────────────────────────────────────┤
 │  Model Providers    │  Orchestration Platforms      │
 │  • Azure OpenAI     │  • Azure AI Foundry           │
