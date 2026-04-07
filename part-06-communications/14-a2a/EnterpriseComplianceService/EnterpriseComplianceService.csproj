@@ -10,8 +10,8 @@
 	  
 	<PackageReference Include="Azure.AI.OpenAI" Version="2.9.0-beta.1" />
 	<PackageReference Include="Azure.Identity" Version="1.20.0" />
-	<PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.0.0-rc5" />
-	<PackageReference Include="Microsoft.Agents.AI.Hosting.A2A.AspNetCore" Version="1.0.0-preview.260330.1" />
+	<PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.0.0" />
+	<PackageReference Include="Microsoft.Agents.AI.Hosting.A2A.AspNetCore" Version="1.0.0-preview.260402.1" />
 	<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
   </ItemGroup>
 

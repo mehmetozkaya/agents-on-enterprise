@@ -68,12 +68,14 @@ class Program
                     "Determine if the user needs Network or Billing support. ALWAYS handoff to the appropriate agent.",
                     "Triage_Router", "Routes messages to specialists");
 
+#pragma warning disable MAAIW001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
                 var handoffWorkflow = AgentWorkflowBuilder.CreateHandoffBuilderWith(triageRouter)
                     // Define the forward transition edges
                     .WithHandoffs(triageRouter, [networkAdmin, billingSupport])
                     // Define the reverse transition edges to return to triage if needed
                     .WithHandoffs([networkAdmin, billingSupport], triageRouter)
                     .Build();
+#pragma warning restore MAAIW001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
                 List<ChatMessage> conversation = [];
                 while (true)
